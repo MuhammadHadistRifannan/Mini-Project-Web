@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Error</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Include external CSS file -->
+</head>
+
+<style>
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.error-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.error-container h1 {
+    font-size: 36px;
+    color: #d9534f; /* Red color for the error message */
+}
+
+.error-container p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.error-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.error-container button:hover {
+    background-color: #0056b3;
+}
+
+.error-container button:focus {
+    outline: none;
+}
+
+
+</style>
+<body>
+    <div class="error-container">
+        <h1>Error</h1>
+        <p>Username atau Sandi Anda salah. Silakan coba lagi.</p>
+        <button onclick="goBack()">Kembali ke Login</button>
+    </div>
+
+    <script>
+        function goBack() {
+            window.location.href = '../index.php'; // Redirect back to the login page (adjust as necessary)
+        }
+    </script>
+</body>
+</html>
